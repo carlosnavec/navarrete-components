@@ -2,7 +2,7 @@
 
 Template and quick-starter to create your own modern React library includes awesome features and bandled using Rollup.
 
-## Versions
+## Versions npm publish
 
 V0.0.1 => added react as peer dependencies
 
@@ -19,6 +19,10 @@ V0.0.6 => Set rollupTypes to true
 V0.1.0 => added StoryBook
 
 V0.2.0 => Added new custom components: Link, Table
+
+V0.2.1 => Updated styles custom components: Link, Table
+
+V0.2.2 => Solved bundle generation problem
 
 ## Note
 

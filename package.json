@@ -1,6 +1,6 @@
 {
   "name": "navarrete-lib",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Test create custom components with storybook and rollup.",
   "main": "dist/cjs/bundle.js",
   "module": "dist/esm/bundle.js",
