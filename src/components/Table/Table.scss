@@ -13,6 +13,7 @@ table {
   th, td {
     border: 1px solid #FF486E;
     padding: 8px;
+    cursor: pointer;
     &::first-letter {
 
       text-transform: uppercase;
