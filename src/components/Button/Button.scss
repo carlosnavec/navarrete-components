@@ -1,0 +1,35 @@
+button {
+  background-color: transparent;
+  border: 2px solid #FF486E;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #FF486E;
+  transition: transform 0.2s, font-weight 0.2s;
+
+    &:active {
+        font-weight: bold;
+    }
+  
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  opacity: 0.5;
+  :active {
+        font-weight: normal;
+    }
+  
+
+    &:hover {
+        transform: scale(1);
+    }
+}
