@@ -6,7 +6,7 @@ import Link from '../Link/Link';
 export interface TableProps {
   headers: string[];
   data: Array<Array<string | number | React.ReactNode>>;
-  onContentCellClick: (name: string) => void;
+  onContentCellClick?: (name: string) => void;
 }
 
 const Table: React.FC<TableProps> = ({ headers, data, onContentCellClick }) => {
@@ -15,7 +15,7 @@ const Table: React.FC<TableProps> = ({ headers, data, onContentCellClick }) => {
   }
 
   const handleCellClick = (cell: string | number | React.ReactNode) => {
-    if (typeof cell === 'string') {
+    if (typeof cell === 'string' && onContentCellClick) {
       onContentCellClick(cell);
     }
   };

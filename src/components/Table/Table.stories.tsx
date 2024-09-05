@@ -18,6 +18,9 @@ TableDefault.args = {
     ['María', 'https://example.com/maria2'],
     ['Pedro', 'https://example.com/pedro'],
   ],
+  onContentCellClick: (cellText) => {
+   console.log(cellText)
+  }
 };
 
 export const TableOneRow: StoryFn<TableProps> = Template.bind({});
