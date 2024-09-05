@@ -1,12 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 table {
-  font-family: Arial, Helvetica, sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 11px;
   border-collapse: separate;
   border-spacing: 0;
   color: rgb(113, 115, 116);
   border-color: #FF486E;
   border-style: solid;
   border-width: 1px;
-  border-radius: 10px; /* Redondear bordes exteriores */
+  border-radius: 0px; /* Redondear bordes exteriores */
   overflow: hidden;
   width: 100%;
 
@@ -21,9 +26,11 @@ table {
   }
 
   th {
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     border-top: none;
+    color: #110205;
   }
 
   td:first-child, th:first-child {
@@ -32,23 +39,27 @@ table {
 
   /* Redondear las esquinas de las celdas en las esquinas de la tabla */
   th:first-child {
-    border-top-left-radius: 10px;
+    border-top-left-radius: 0px;
   }
 
   th:last-child {
-    border-top-right-radius: 10px;
+    border-top-right-radius: 0px;
   }
 
   tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 0px;
   }
 
   tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 0px;
   }
 
-  tr:hover {
-      font-weight: bold;
+  td {
+    transition: transform 0.1s ease;
+  }
+
+  td:hover {
+    transform: scale(1.05);
   }
 
 }
