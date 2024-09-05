@@ -17,15 +17,21 @@ export default [
 		input: 'src/index.ts',
 		output: [
 			{
-				file: 'dist/esm/index.js',
-				format: 'esm',
-				sourcemap: true,
-			},
-			{
-				file: 'dist/cjs/index.js',
+				file: pkg.main,
 				format: 'cjs',
 				sourcemap: true,
 			},
+			{
+				file: pkg.module,
+				format: "esm",
+				sourcemap: true,
+			},
+			/* {
+				file: 'dist/bundle.min.js',
+				format: 'iife',
+				name: 'version',
+				plugins: [terser()]
+			} */
 		],
 		plugins: [
 			peerDepsExternal(),
